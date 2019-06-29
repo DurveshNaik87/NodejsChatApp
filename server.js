@@ -4,7 +4,7 @@ const http = require("http");
 const server = http.createServer(app);
 const io = require("socket.io")(server);
 
-const port = process.env.port || 3500;
+const port = process.env.PORT || 3500;
 
 //Static folder to keep app static files
 app.use(express.static(__dirname + "/public"));
